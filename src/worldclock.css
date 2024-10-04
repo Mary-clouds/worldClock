@@ -1,21 +1,27 @@
+
 body {
     font-family: Arial, sans-serif;
-    background-color:rgb(210, 83, 146);
-    display: flex;
-    justify-content: center;
+    background-color:rgb(244, 206, 225);
     align-items: center;
-    height: 100vh;
-    margin: 0;
+   margin: 90px;
 }
 .container {
     background:white;
-    padding: 20px;
+    padding: 40px;
+
+    margin: 0 auto;
+    
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    max-width: 400px;
+    
     text-align: center;
+    
 }
+
 
 footer{
     text-align: center;
+    padding: 8px;
+    margin: 8px;
 }
