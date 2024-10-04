@@ -19,19 +19,20 @@ doualaTimeElement.innerHTML =  timezonedouala.format("h:mm:ss [<small>]A[</small
 
 }
 }
-updateTimezone();
-setInterval(updateTimezone,1000);
+
 
 function updateCity(event){
     let cityzone = event.target.value;
+    if(cityzone ==="current"){ 
+        cityzone = moment.tz.guess();
+    }
     let city = cityzone.replace("_", "").split("/")[1];
     let cityTimezone = moment().tz(cityzone);
-    let citiesElement = document.querySelector(".cities");
-    citiesElement.innerHTML = cityzone;
-    citiesElement = ` 
+    let citiesElement = document.querySelector("#cities");
+    citiesElement.innerHTML =  ` 
     <div class="city" >
          <div>
-            <h2>🍔</h2>
+            <h2>${city}</h2>
                 <div class="date">${cityTimezone.format("MMMM Do YYYY")} </div>
                 <div class="time">${cityTimezone.format("h:mm:ss")} <small>${cityTimezone.format("A")}</small></div>
 
@@ -40,5 +41,8 @@ function updateCity(event){
     </div>`;
 
 }
+
+updateTimezone();
+setInterval(updateTimezone,1000);
 let citiesElement = document.querySelector("#city-list");
 citiesElement.addEventListener("change", updateCity);

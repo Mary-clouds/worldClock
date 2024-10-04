@@ -9,36 +9,40 @@
     <title>my little world clock app</title>
 </head>
 <body>
+    <div class="container">
     <h1>World clock</h1>
     <select id="city-list">
         <option value="">select a city here 👇</option>
-        <option value="Europe/Paris">Paris</option>
-        <option value="Asia/Tokyo">Tokyo</option>
-        <option value="Africa/Douala">Douala</option>
-        <option value="America/Los_Angeles">los Angeles</option>
-        <option value="Pacific/Auckland">Auckland</option>
+        <option value="Europe/Paris">Paris🥐</option>
+        <option value="Asia/Tokyo">Tokyo🍣</option>
+        <option value="Africa/Douala">Douala🍤</option>
+        <option value="America/Los_Angeles">los Angeles🍔</option>
+        <option value="Pacific/Auckland">Auckland🐟</option>
+        <option value="current">MY LOCATION</option>
+
 
     </select>
 
-    <div class="cities">
+    <div id="cities">
     <div class="city" id="los-angeles">
          <div>
-            <h2>Los Angeles🍔</h2>
+            <h2>Los Angeles</h2>
                 <div class="date"> </div>
                 <div class="time"></div>
          </div>
            
     </div>
     <div class="city" id="douala">
-        <h2>Douala🍤</h2>
+        <h2>Douala</h2>
             <div class="date"></div>
             <div class="time"></div>
     </div>
 </div>
-
+</div>
     <footer>
         This project was coded with ❤️ and is open sourced on <a href="https://github.com/Mary-clouds/worldClock" target="_blank">Github</a>
     </footer>
+
     <script src="src/worldclock.js"></script>
 </body>
 </html>
