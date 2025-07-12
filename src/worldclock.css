@@ -25,3 +25,31 @@ footer{
     padding: 8px;
     margin: 8px;
 }
+/* For screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  body {
+    margin: 40px 10px;
+  }
+
+  .container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 4px;
+    margin: 4px;
+  }
+}
+
+/* For extra small devices  (<=360px) */
+@media screen and (max-width: 360px) {
+  .container {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
